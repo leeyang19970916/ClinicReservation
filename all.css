@@ -11132,6 +11132,13 @@ h3 {
   width: 100%;
   height: 100%;
 }
+@media (max-width: 576px) {
+  .background-Image {
+    background-position: -100px bottom;
+    width: auto;
+    height: auto;
+  }
+}
 
 .fwBolder {
   font-weight: bolder;
@@ -11139,6 +11146,11 @@ h3 {
 
 .fsLarge {
   font-size: 2rem;
+}
+@media (max-width: 576px) {
+  .fsLarge {
+    font-size: 1.5rem;
+  }
 }
 
 header {
@@ -11186,6 +11198,11 @@ header .header-background .header-threeStep {
 .common-card.pd-top {
   padding-top: 4.5rem;
 }
+@media (max-width: 576px) {
+  .common-card.pd-top {
+    padding-top: 1rem;
+  }
+}
 .common-card.oneBackground {
   background-image: url("./picture/block-1.png");
 }
@@ -11198,12 +11215,26 @@ header .header-background .header-threeStep {
 .common-card.fourBackground {
   background-image: url("./picture/block-4.png");
 }
+.common-card.fiveBackground {
+  height: auto;
+}
 .common-card .card-blueTitle {
   width: 30%;
   padding: 5px 0;
 }
+@media (max-width: 576px) {
+  .common-card .card-blueTitle {
+    width: 100%;
+    text-align: center;
+  }
+}
 .common-card .card-blueTitle .pd-left {
   padding-left: 5rem;
+}
+@media (max-width: 576px) {
+  .common-card .card-blueTitle .pd-left {
+    padding: 0;
+  }
 }
 .common-card .content {
   padding-top: 5rem;
@@ -11235,6 +11266,16 @@ header .header-background .header-threeStep {
   margin: 0 auto;
   padding-top: 26px;
 }
+@media (max-width: 576px) {
+  .common-card .card-blueＣontent.theThreeCard {
+    width: 80%;
+    padding-top: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .common-card .card-blueＣontent .threeCard {
   width: calc 33.3333333333%;
   display: -webkit-box;
@@ -11251,6 +11292,11 @@ header .header-background .header-threeStep {
       -ms-flex-align: center;
           align-items: center;
   border: 0;
+}
+@media (max-width: 576px) {
+  .common-card .card-blueＣontent .threeCard {
+    padding-top: 1rem;
+  }
 }
 .common-card .card-blueＣontent .threeCard .settingBtn {
   border-radius: 50px;
@@ -11275,9 +11321,19 @@ header .header-background .header-threeStep {
   padding-top: 3rem;
   padding-bottom: 2.5rem;
 }
+@media (max-width: 576px) {
+  .button-and-notice {
+    padding: 15px;
+  }
+}
 .button-and-notice .download {
   border-radius: 50px;
   width: 40%;
+}
+@media (max-width: 576px) {
+  .button-and-notice .download {
+    width: 100%;
+  }
 }
 .button-and-notice .notice-content-card {
   width: 85%;
@@ -11302,6 +11358,16 @@ header .header-background .header-threeStep {
   font-weight: 400;
   line-height: 1.6;
 }
+@media (max-width: 576px) {
+  .button-and-notice .notice-content-card {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px 5px 10px 0;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-size: medium;
+  }
+}
 .button-and-notice .notice-content-card ol {
   margin: 0;
 }
@@ -11313,6 +11379,10 @@ footer .footer-card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -11321,6 +11391,15 @@ footer .footer-card {
           align-items: center;
   padding: 30px 0;
   width: 75%;
+}
+@media (max-width: 576px) {
+  footer .footer-card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
 }
 footer .footer-card .singleCard {
   display: -webkit-box;
@@ -11333,9 +11412,23 @@ footer .footer-card .singleCard {
       -ms-grid-row-align: start;
       align-self: start;
 }
+@media (max-width: 576px) {
+  footer .footer-card .singleCard {
+    width: 100%;
+  }
+}
+footer .footer-card .singleCard.mt-sm-2 {
+  margin-top: 30px;
+}
 footer .footer-card .singleCard .cardImage {
   width: 45px;
   margin: 0 10px;
+}
+@media (max-width: 576px) {
+  footer .footer-card .singleCard .cardImage {
+    width: 20%;
+    margin: 0 20px;
+  }
 }
 footer .footer-card .singleCard .card-content .h2 {
   font-size: larger;
