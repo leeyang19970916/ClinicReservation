@@ -11242,27 +11242,56 @@ header .header-background .header-threeStep {
       -ms-flex-align: start;
           align-items: flex-start;
   width: 100%;
-  padding-top: 3rem;
+}
+@media (max-width: 576px) {
+  .cardforBlue {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 .cardforBlue .content {
   width: 50%;
-  padding-top: 2rem;
+}
+@media (max-width: 576px) {
+  .cardforBlue .content {
+    padding: 0 15px;
+  }
 }
 .cardforBlue .content .card-content {
   padding-left: 5rem;
   padding-top: 2rem;
+}
+@media (max-width: 576px) {
+  .cardforBlue .content .card-content {
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 .cardforBlue .content-Image {
   width: 50%;
 }
 
 .card-blueTitle {
-  width: 60%;
+  width: 30%;
   padding: 5px 0;
 }
 @media (max-width: 576px) {
   .card-blueTitle {
-    width: 30%;
+    width: 100% !important;
     text-align: center;
   }
 }
@@ -11304,8 +11333,22 @@ header .header-background .header-threeStep {
 .common-card.twoBackground {
   padding: 1rem 2rem 0 2rem;
 }
+.common-card.fourBackground {
+  padding: 4.5rem 0 0 0;
+}
+@media (max-width: 576px) {
+  .common-card.fourBackground {
+    padding: 1rem 15px 0 15px;
+  }
+}
 .common-card.fiveBackground {
-  height: auto;
+  display: block;
+  padding: 4.5rem 0 0 0;
+}
+@media (max-width: 576px) {
+  .common-card.fiveBackground {
+    padding: 1rem 15px 0 15px;
+  }
 }
 .common-card .content {
   width: 60%;
