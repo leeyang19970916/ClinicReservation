@@ -11154,9 +11154,26 @@ h3 {
 }
 
 header {
-  height: 600px;
+  position: relative;
+}
+header .topPicture {
+  width: 100%;
+}
+header .topPicture img {
+  max-height: 600px;
+}
+@media (max-width: 576px) {
+  header .topPicture {
+    padding: 0px;
+  }
 }
 header .header-background {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11170,17 +11187,31 @@ header .header-background {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url("./picture/top.png");
+}
+@media (max-width: 576px) {
+  header .header-background {
+    top: 35%;
+  }
 }
 header .header-background .header-clinic {
   font-weight: bolder;
   letter-spacing: 3px;
   font-size: 6.5rem;
 }
+@media (max-width: 576px) {
+  header .header-background .header-clinic {
+    font-size: xx-large;
+  }
+}
 header .header-background .header-content {
   font-weight: bolder;
   font-size: 2.5rem;
   position: relative;
+}
+@media (max-width: 576px) {
+  header .header-background .header-content {
+    font-size: large;
+  }
 }
 header .header-background .header-threeStep {
   font-weight: bolder;
@@ -11191,9 +11222,76 @@ header .header-background .header-threeStep {
   font-size: x-large;
   letter-spacing: 3px;
 }
+@media (max-width: 576px) {
+  header .header-background .header-threeStep {
+    font-size: medium;
+    width: 100%;
+    padding: 5px 5px;
+    letter-spacing: 0px;
+  }
+}
+
+.cardforBlue {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  padding-top: 3rem;
+}
+.cardforBlue .content {
+  width: 50%;
+  padding-top: 2rem;
+}
+.cardforBlue .content .card-content {
+  padding-left: 5rem;
+  padding-top: 2rem;
+}
+.cardforBlue .content-Image {
+  width: 50%;
+}
+
+.card-blueTitle {
+  width: 60%;
+  padding: 5px 0;
+}
+@media (max-width: 576px) {
+  .card-blueTitle {
+    width: 30%;
+    text-align: center;
+  }
+}
+.card-blueTitle .pd-left {
+  padding-left: 5rem;
+}
+@media (max-width: 576px) {
+  .card-blueTitle .pd-left {
+    padding: 0;
+  }
+}
 
 .common-card {
-  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 3rem 5rem 0 5rem;
+}
+@media (max-width: 576px) {
+  .common-card {
+    padding: 2rem 5rem 0 5rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 .common-card.pd-top {
   padding-top: 4.5rem;
@@ -11203,53 +11301,83 @@ header .header-background .header-threeStep {
     padding-top: 1rem;
   }
 }
-.common-card.oneBackground {
-  background-image: url("./picture/block-1.png");
-}
 .common-card.twoBackground {
-  background-image: url("./picture/block-2.png");
-}
-.common-card.threeBackground {
-  background-image: url("./picture/block-3.png");
-}
-.common-card.fourBackground {
-  background-image: url("./picture/block-4.png");
+  padding: 1rem 2rem 0 2rem;
 }
 .common-card.fiveBackground {
   height: auto;
 }
-.common-card .card-blueTitle {
-  width: 30%;
-  padding: 5px 0;
-}
-@media (max-width: 576px) {
-  .common-card .card-blueTitle {
-    width: 100%;
-    text-align: center;
-  }
-}
-.common-card .card-blueTitle .pd-left {
-  padding-left: 5rem;
-}
-@media (max-width: 576px) {
-  .common-card .card-blueTitle .pd-left {
-    padding: 0;
-  }
-}
 .common-card .content {
-  padding-top: 5rem;
-  padding-left: 5rem;
+  width: 60%;
+}
+@media (max-width: 576px) {
+  .common-card .content {
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
 }
 .common-card .content .card-title {
   letter-spacing: 2px;
+  margin-bottom: 0;
 }
 .common-card .content .card-content {
   padding-top: 2rem;
   letter-spacing: 3px;
 }
+@media (max-width: 576px) {
+  .common-card .content .card-content {
+    padding-top: 0;
+  }
+}
+.common-card .content .card-content.card-content-two {
+  display: block;
+}
+@media (max-width: 576px) {
+  .common-card .content .card-content.card-content-two {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .common-card .content .card-clinicCode {
   font-weight: 500;
   font-size: 1.5rem;
+}
+@media (max-width: 576px) {
+  .common-card .content .card-clinicCode {
+    padding-top: 0 !important;
+  }
+}
+.common-card .content-Image {
+  width: 40%;
+}
+@media (max-width: 576px) {
+  .common-card .content-Image {
+    width: 100% !important;
+  }
 }
 .common-card .card-blueＣontent {
   display: -webkit-box;
@@ -11295,13 +11423,19 @@ header .header-background .header-threeStep {
 }
 @media (max-width: 576px) {
   .common-card .card-blueＣontent .threeCard {
-    padding-top: 1rem;
+    padding-top: 1.5rem;
   }
 }
 .common-card .card-blueＣontent .threeCard .settingBtn {
+  margin-bottom: 10px;
   border-radius: 50px;
   font-weight: 500;
   font-size: larger;
+}
+@media (max-width: 576px) {
+  .common-card .card-blueＣontent .threeCard .settingBtn {
+    width: 100% !important;
+  }
 }
 
 .button-and-notice {
