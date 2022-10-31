@@ -261,9 +261,9 @@
         align-items: center;
 
         &.theThreeCard {
-            width: 90%;
+            width: 100%;
             margin: 0 auto;
-            padding-top: 26px;
+            padding-top: 2rem;
 
             @media (max-width:768px) {
                 width: 80%;
