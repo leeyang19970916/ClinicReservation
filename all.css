@@ -11512,9 +11512,9 @@ header .header-background .header-threeStep {
           align-items: center;
 }
 .common-card .card-blueＣontent.theThreeCard {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
-  padding-top: 26px;
+  padding-top: 2rem;
 }
 @media (max-width: 768px) {
   .common-card .card-blueＣontent.theThreeCard {
