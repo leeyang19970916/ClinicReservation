@@ -11220,6 +11220,15 @@ header .header-background .header-threeStep {
   }
 }
 
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
 .background-Image {
   background-size: contain;
   background-position: center;
