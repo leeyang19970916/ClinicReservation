@@ -11141,7 +11141,7 @@ h3 {
 }
 
 .fwBolder {
-  font-weight: bolder;
+  font-weight: bolder !important;
 }
 
 .fsLarge {
@@ -11217,7 +11217,7 @@ header .header-background .header-threeStep {
   font-weight: bolder;
   border-radius: 50px;
   text-align: center;
-  width: 50%;
+  width: 60%;
   padding: 20px 10px;
   font-size: x-large;
   letter-spacing: 3px;
@@ -11330,8 +11330,10 @@ header .header-background .header-threeStep {
     padding-top: 1rem;
   }
 }
-.common-card.twoBackground {
-  padding: 1rem 2rem 0 2rem;
+@media (max-width: 576px) {
+  .common-card.twoBackground {
+    padding: 1rem 2rem 0 2rem;
+  }
 }
 .common-card.fourBackground {
   padding: 4.5rem 0 0 0;
@@ -11472,8 +11474,11 @@ header .header-background .header-threeStep {
 .common-card .card-blueＣontent .threeCard .settingBtn {
   margin-bottom: 10px;
   border-radius: 50px;
-  font-weight: 500;
+  font-weight: bolder;
   font-size: larger;
+}
+.common-card .card-blueＣontent .threeCard .settingBtn.settingBtn-NumThree {
+  padding: 0.375rem 1rem;
 }
 @media (max-width: 576px) {
   .common-card .card-blueＣontent .threeCard .settingBtn {
@@ -11547,9 +11552,7 @@ header .header-background .header-threeStep {
 }
 .button-and-notice .notice-content-card ol {
   margin: 0;
-}
-.button-and-notice .notice-content-card span {
-  font-weight: 500;
+  font-weight: bolder;
 }
 
 footer .footer-card {
@@ -11568,6 +11571,7 @@ footer .footer-card {
           align-items: center;
   padding: 30px 0;
   width: 75%;
+  font-weight: bolder;
 }
 @media (max-width: 576px) {
   footer .footer-card {
