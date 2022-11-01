@@ -11667,7 +11667,7 @@ footer .footer-card {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 30px 15px;
+  padding: 2rem 1rem;
   width: 100%;
   font-weight: bolder;
 }
