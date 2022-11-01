@@ -34,14 +34,15 @@ footer {
                 margin: 0 10px;
 
                 @media (max-width:576px) {
-                    width: 25%;
-                    margin: 0 10px;
+                    width: 20%;
+                    margin: 0 0 0 10px;
                 }
             }
 
             .card-content {
                 @media (max-width:576px) {
-                    width: 75%;
+                    width: 80%;
+                    padding-left: 1rem;
                 }
 
                 .h2 {
