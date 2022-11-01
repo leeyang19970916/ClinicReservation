@@ -35,11 +35,15 @@ footer {
 
                 @media (max-width:576px) {
                     width: 25%;
-                    margin: 0 20px;
+                    margin: 0 10px;
                 }
             }
 
             .card-content {
+                @media (max-width:576px) {
+                    width: 75%;
+                }
+
                 .h2 {
                     font-size: larger;
                     margin-bottom: 0.3rem;

@@ -11708,7 +11708,12 @@ footer .footer-card .singleCard .cardImage {
 @media (max-width: 576px) {
   footer .footer-card .singleCard .cardImage {
     width: 25%;
-    margin: 0 20px;
+    margin: 0 10px;
+  }
+}
+@media (max-width: 576px) {
+  footer .footer-card .singleCard .card-content {
+    width: 75%;
   }
 }
 footer .footer-card .singleCard .card-content .h2 {
