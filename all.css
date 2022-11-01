@@ -11714,9 +11714,10 @@ footer .footer-card .singleCard .cardImage {
 footer .footer-card .singleCard .card-content .h2 {
   font-size: larger;
   margin-bottom: 0.3rem;
+  font-weight: bolder;
 }
 footer .footer-card .singleCard .card-content .h3 {
   margin-bottom: 0.5rem;
   font-size: medium;
-  font-weight: normal;
+  font-weight: bolder;
 }
