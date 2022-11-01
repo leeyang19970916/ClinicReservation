@@ -34,14 +34,14 @@ footer {
                 margin: 0 10px;
 
                 @media (max-width:576px) {
-                    width: 20%;
-                    margin: 0 0 0 10px;
+                    width: 25%;
+                    margin: 0 0 0 1rem;
                 }
             }
 
             .card-content {
                 @media (max-width:576px) {
-                    width: 80%;
+                    width: 75%;
                     padding-left: 1rem;
                 }
 

@@ -11707,13 +11707,13 @@ footer .footer-card .singleCard .cardImage {
 }
 @media (max-width: 576px) {
   footer .footer-card .singleCard .cardImage {
-    width: 20%;
-    margin: 0 0 0 10px;
+    width: 25%;
+    margin: 0 0 0 1rem;
   }
 }
 @media (max-width: 576px) {
   footer .footer-card .singleCard .card-content {
-    width: 80%;
+    width: 75%;
     padding-left: 1rem;
   }
 }
